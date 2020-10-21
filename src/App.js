@@ -1,8 +1,7 @@
 import React from "react";
-import Employee from "./components/employee";
+import ReactDOM from "react-dom";
+import Layout from "./components/Layout.js";
 
-function App() {
-  
-}
+const app = document.getElementById('app');
 
-export default App;
+ReactDOM.render(<Layout/>, app);
