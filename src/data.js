@@ -1,4 +1,6 @@
-[
+import React from "react";
+
+const employees=[
     {
       "id": 1,
       "firstName": "Marly",
@@ -69,4 +71,6 @@
         "image": "Assets/employeePhotos/penn.jpg", 
         "email": "pastie9@gmail.com"
       }
-  ]
+  ];
+
+  export default employees;
