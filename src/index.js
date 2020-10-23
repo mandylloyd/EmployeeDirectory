@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Employee from './components/Employee';
+import SearchBar from './components/SearchBar';
 
 const App = () => {
     return (
         <div>
+            <SearchBar />
             <Employee
             img=""
             firstName="Sam"
@@ -15,4 +17,4 @@ const App = () => {
     );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.querySelector('#root'));
