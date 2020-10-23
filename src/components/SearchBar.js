@@ -1,15 +1,24 @@
 import React from 'react';
 
-const SearchBar = () => {
-    return (
-        <div className="ui category search">
-        <div className="ui icon input">
-                <input className="prompt" type="text" placeholder="Search employees..."/>
-                    <i className="search icon"/>
-            <div className="results"></div>
-            </div>
+class SearchBar extends React.Component {
+    state = { term: '' };
+
+    render() {
+        return (
+        <div className="ui segment">
+            <form className="ui form">
+                <div className="field">
+                <label>Employee Search</label>
+                    <input 
+                    type="text" 
+                    value={this.state.term} 
+                    onChange={e => this.setState({ term: e.target.value. })}
+                     />
+                </div>  
+            </form>  
         </div>
-    )
+        );
+    }
 };
 
 export default SearchBar;
