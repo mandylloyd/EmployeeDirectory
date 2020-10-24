@@ -3,6 +3,13 @@ import React from 'react';
 class SearchBar extends React.Component {
     state = { term: '' };
 
+    onEdit = e => {
+        this.setState({
+            term: e.target.value
+          })
+          this.props.onChange(e.target.value)
+    }
+
     render() {
         return (
         <div className="ui segment">
@@ -12,7 +19,7 @@ class SearchBar extends React.Component {
                     <input 
                     type="text" 
                     value={this.state.term} 
-                    onChange={e => this.setState({ term: e.target.value. })}
+                    onChange={this.onEdit}
                      />
                 </div>  
             </form>  
