@@ -1,4 +1,3 @@
-#Weather Dashboard
 
 # Description
 This React application dynamically displays employees in a list on the page.  The user can search employees by first name, last name, or email address, as well as to sort alphabetically by first or last name.
